@@ -1,0 +1,12 @@
+.span-text {
+  right: 20px;
+  top: 30px;
+}
+
+.span-text.half {
+  right: 180px;
+}
+
+.span-text.w-label {
+  top: 51px;
+}

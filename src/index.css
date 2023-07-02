@@ -1,0 +1,124 @@
+@font-face {
+  font-family: Inter-Regular;
+  src: url(./assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url(./assets/fonts/static/Inter-SemiBold.ttf);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* COLORS */
+    --color-blue: 52 95 246;
+    --color-gunMetal: 37 51 71;
+    --color-darkElectric-blue: 94 110 133;
+    --color-grey: 216 226 231;
+    --color-white: 255 255 255;
+    /* FONTS */
+    --font-inter-regular: Inter-Regular;
+    --font-inter-semiBold: Inter-SemiBold;
+    /* SIZES */
+    --size-heading-xl: 64px;
+    --size-heading-l: 48px;
+    --size-heading-m: 24px;
+    --size-heading-s: 20px;
+    --size-body-m: 16px;
+    --size-body-s: 14px;
+    /* LINE HEIGHTS */
+    --lineHeight-heading: 110%;
+    --lineHeight-body: 150%;
+  }
+
+  /* HEADINGS */
+  .heading-xl {
+    font-family: var(--font-inter-semiBold);
+    font-size: var(--size-heading-xl);
+    line-height: var(--lineHeight-heading);
+  }
+
+  .heading-l {
+    font-family: var(--font-inter-semiBold);
+    font-size: var(--size-heading-l);
+    line-height: var(--lineHeight-heading);
+  }
+
+  .heading-m {
+    font-family: var(--font-inter-semiBold);
+    font-size: var(--size-heading-m);
+    line-height: var(--lineHeight-heading);
+  }
+
+  .heading-s {
+    font-family: var(--font-inter-semiBold);
+    font-size: var(--size-heading-s);
+    line-height: var(--lineHeight-heading);
+  }
+
+  /* BODYS */
+  .body-m-bold {
+    font-size: var(--size-body-m);
+    font-family: var(--font-inter-semiBold);
+    line-height: var(--lineHeight-body);
+  }
+
+  .body-m {
+    font-size: var(--size-body-m);
+    font-family: var(--font-inter-regular);
+    line-height: var(--lineHeight-body);
+  }
+
+  .body-s {
+    font-size: var(--size-body-s);
+    font-family: var(--font-inter-regular);
+    line-height: var(--lineHeight-body);
+  }
+
+  /* CUSTOMS */
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .bmi-gradient {
+    background: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
+  }
+
+  .bmi-box-shadow {
+    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+  }
+
+  .header-bg {
+    border-radius: 0px 0px 35px 35px;
+    background: var(
+      --gradient-1,
+      linear-gradient(315deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%)
+    );
+  }
+
+  .habits-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.25;
+    background: var(
+      --gradient-1,
+      linear-gradient(315deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%)
+    );
+  }
+
+  .limitationItem-card {
+    border-radius: 16px;
+    background: var(--pure-white, #fff);
+    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+  }
+}
+
